@@ -13,7 +13,7 @@ public class TestApi {
     public static void main(String[] args) {
         try {
 
-            URL url = new URL("https://startup.bolsadesantiago.com/api/consulta/TickerOnDemand/getIndices?access_token=A687F3F40CC646F58F8CAD2208899C4A");//your url i.e fetch data from .
+            URL url = new URL("https://startup.bolsadesantiago.com/api/consulta/TickerOnDemand/getIndices?access_token=A687F3F40CC646F58F8CAD2208899C4A");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Accept", "application/json");
@@ -30,7 +30,7 @@ public class TestApi {
             conn.disconnect();
 
         } catch (Exception e) {
-            System.out.println("Exception in NetClientGet:- " + e);
+            System.out.println("Excepcion:- " + e);
         }
     }
     
